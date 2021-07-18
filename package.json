@@ -1,19 +1,21 @@
 {
-  "name": "ts-rollup-starter",
+  "name": "typescript-rollup-starter",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "rollup -c",
     "test": "mocha --reporter spec"
   },
   "license": "MIT",
   "browser": "dist/index.ts",
   "devDependencies": {
+    "@rollup/plugin-typescript": "^8.2.3",
     "chai": "^4.3.4",
     "mocha": "^9.0.2",
     "rollup": "^2.53.2",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript": "^1.0.1",
     "tslib": "^2.3.0",
     "typescript": "^4.3.5"
