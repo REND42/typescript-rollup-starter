@@ -1,11 +1,16 @@
 {
   "name": "typescript-rollup-starter",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
+    "dev": "set NODE_ENV=developemnt&& rollup -c rollup.config.js -w",
     "build": "rollup -c",
     "test": "mocha --reporter spec"
   },
+  "types": "lib/index.d.ts",
   "license": "MIT",
   "browser": "dist/index.ts",
   "devDependencies": {

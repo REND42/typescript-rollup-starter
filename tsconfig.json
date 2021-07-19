@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "outDir": "types",
-    "sourceMap": false,
-    "target": "es6",
-    "module": "es6",
+    "outDir": "./lib",
+    "sourceMap": true,
+    "target": "ESNext",
+    "module": "ESNEXT",
     "moduleResolution": "node",
     "allowJs": false,
     "strict": true,
@@ -13,12 +13,13 @@
     "esModuleInterop": true,
     "removeComments": false,
     "lib": [
-      "es6",
+      "esnext",
       "dom"
     ],
     "rootDir":"."
   },
   "include": [
     "src"
-  ]
+  ],
+  "exclude": ["node_modules"]
 }
