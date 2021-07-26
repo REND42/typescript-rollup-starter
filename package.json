@@ -6,10 +6,20 @@
     "lib"
   ],
   "scripts": {
-    "dev": "set NODE_ENV=developemnt&& rollup -c rollup.config.js -w",
+    "dev": "rollup -c rollup.config.js -w",
     "build": "rollup -c",
     "test": "mocha --reporter spec"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/explosionsinthesky/typescript-rollup-starter.git"
+  },
+  "keywords": ["typescript"],
+  "author": "Dan",
+  "bugs": {
+    "url": "https://github.com/explosionsinthesky/typescript-rollup-starter.git/issues"
+  },
+  "homepage": "https://github.com/explosionsinthesky/typescript-rollup-starter.git#readme",
   "types": "lib/index.d.ts",
   "license": "MIT",
   "browser": "dist/index.ts",
